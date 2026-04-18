@@ -17,7 +17,7 @@ interface Particle {
 export default function ParticleSpotlightBg() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
 
   const createParticle = (canvas: HTMLCanvasElement): Particle => {
     const particle = {
