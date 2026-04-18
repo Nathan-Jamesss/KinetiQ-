@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/KinetiQ-',
-  assetPrefix: '/KinetiQ-',
 };
 
 export default nextConfig;
