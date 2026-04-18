@@ -68,9 +68,8 @@ export const FINGER_COLORS: Record<Finger, string> = {
   index:  "#00f2ff", // Neon Cyan
   middle: "#ffd700", // Metallic Gold
   ring:   "#39ff14", // Neon Lime
-  pinky:  "#bc13fe", // Neon 
-  Purple,
-      thumb: "#c9bfa9",
+  pinky:  "#bc13fe", // Neon Purple
+  thumb: "#c9bfa9",
 };
 
 export const FINGER_LABELS: Record<Finger, string> = {
