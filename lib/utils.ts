@@ -38,7 +38,7 @@ export const VCR_PARAMS = {
   ON_CYCLES: 3,
   OFF_CYCLES: 2,
   JITTER_PCT: 0.235,   // ±23.5% for noisy vCR
-  FINGERS: ["index", "middle", "ring", "pinky"] as const,
+  FINGERS: ["index", "middle", "ring", "pinky", "thumb"] as const,
 };
 
 export type Finger = typeof VCR_PARAMS.FINGERS[number];
@@ -68,7 +68,9 @@ export const FINGER_COLORS: Record<Finger, string> = {
   index:  "#00f2ff", // Neon Cyan
   middle: "#ffd700", // Metallic Gold
   ring:   "#39ff14", // Neon Lime
-  pinky:  "#bc13fe", // Neon Purple
+  pinky:  "#bc13fe", // Neon 
+  Purple,
+      thumb: "#c9bfa9",
 };
 
 export const FINGER_LABELS: Record<Finger, string> = {
@@ -76,6 +78,7 @@ export const FINGER_LABELS: Record<Finger, string> = {
   middle: "Middle",
   ring:   "Ring",
   pinky:  "Pinky",
+      thumb: "Thumb",
 };
 
 export const THERAPY_MODES = [
